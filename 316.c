@@ -1,36 +1,25 @@
 #include<stdio.h>
-#include<math.h>
-int isPrime(int x)
+int GZZ(int x)
 {
-    int i;
-    for(i=2;i<=sqrt(x);i++)
-    {
-        if(x%i==0)
-        {
-            break;
-        }
-    }
-    if(i>sqrt(x))
-    {
-        return 1;
-    }
-        else
-    {
-        return 0;
-    }
-        
+if((x%4==0)&&(x%100!=0))
+{
+ return 1;
+}
+return 0;   
 }
 int main(void)
 {
-    int i,flag;
-    for(i=2;i<=100;i++)
+    int i,f,a=0;
+    for(i=2019;i<=2050;i++)
     {
-    flag=isPrime(i);
-    if(flag==1)
+    f=GZZ(i);
+    if(f==1)
     {
+        a++;
         printf("%d ",i);
     }
     }
+    printf("%d\n",a);
     return 0;
 }
 
