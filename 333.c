@@ -6,7 +6,7 @@
      printf("Enter n:\n");
      scanf("%d",&n);
      i=1;
-     while(i<=n)
+     while(i<=n) 
      {
         term=term*i;
          sum+=1/term;
