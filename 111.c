@@ -6,7 +6,7 @@ int main(void)
     printf("Enter a:\n");
     scanf("%d",&a);
     switch(a)
-    {
+    { 
         case 0:
         break;
         case 1:
